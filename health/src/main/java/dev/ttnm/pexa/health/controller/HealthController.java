@@ -1,4 +1,4 @@
-package dev.ttnm.core.health.controller;
+package dev.ttnm.pexa.health.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

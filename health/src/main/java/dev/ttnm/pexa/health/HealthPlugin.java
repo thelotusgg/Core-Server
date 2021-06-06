@@ -1,6 +1,6 @@
-package dev.ttnm.core.health;
+package dev.ttnm.pexa.health;
 
-import dev.ttnm.core.SpringConfiguration;
+import dev.ttnm.pexa.core.SpringConfiguration;
 import org.pf4j.PluginWrapper;
 import org.pf4j.spring.SpringPlugin;
 import org.slf4j.Logger;

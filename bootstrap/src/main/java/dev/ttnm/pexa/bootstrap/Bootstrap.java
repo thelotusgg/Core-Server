@@ -1,6 +1,6 @@
-package dev.ttnm.core.bootstrap;
+package dev.ttnm.pexa.bootstrap;
 
-import dev.ttnm.core.Core;
+import dev.ttnm.pexa.core.Core;
 
 import java.io.File;
 import java.io.IOException;

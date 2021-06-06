@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>core-server-parent</artifactId>
-    <groupId>dev.ttnm</groupId>
+    <artifactId>parent</artifactId>
+    <groupId>dev.ttnm.pexa</groupId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
@@ -14,7 +14,7 @@
 
   <properties>
     <plugin.id>health-plugin</plugin.id>
-    <plugin.class>dev.ttnm.core.health.HealthPlugin</plugin.class>
+    <plugin.class>dev.ttnm.pexa.health.HealthPlugin</plugin.class>
     <plugin.version>${project.version}</plugin.version>
     <plugin.provider>${project.organization.name}</plugin.provider>
     <plugin.dependencies />
@@ -22,8 +22,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>dev.ttnm</groupId>
-      <artifactId>core-server</artifactId>
+      <groupId>dev.ttnm.pexa</groupId>
+      <artifactId>core</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
   </dependencies>

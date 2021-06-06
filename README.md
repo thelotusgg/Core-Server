@@ -1,4 +1,4 @@
-# Core Server
+# Pexa - Plugin EXtensible Architecture
 
 <p>
   <a href="https://github.com/thelotusgg/babylon/blob/dev/README.md" target="_blank">
@@ -9,7 +9,7 @@
   </a>
 </p>
 
-The core server project was started to provide a base for multiple projects planned by
+Pexa was started to provide a base for multiple projects planned by
 [The Lotus](https://github.com/thelotusgg).
 Our goal is to provide a fully functional server with a plugin system and basic logging, REST and event functionality.
 

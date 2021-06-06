@@ -1,4 +1,4 @@
-package dev.ttnm.core;
+package dev.ttnm.pexa.core;
 
 import org.pf4j.spring.SpringPluginManager;
 import org.springframework.context.annotation.Bean;
