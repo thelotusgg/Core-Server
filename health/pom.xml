@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>dev.ttnm.pexa</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>health</artifactId>
+
+  <properties>
+    <plugin.id>health-plugin</plugin.id>
+    <plugin.class>dev.ttnm.pexa.health.HealthPlugin</plugin.class>
+    <plugin.version>${project.version}</plugin.version>
+    <plugin.provider>${project.organization.name}</plugin.provider>
+    <plugin.dependencies />
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>dev.ttnm.pexa</groupId>
+      <artifactId>core</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Plugin-Id>${plugin.id}</Plugin-Id>
+              <Plugin-Class>${plugin.class}</Plugin-Class>
+              <Plugin-Version>${plugin.version}</Plugin-Version>
+              <Plugin-Provider>${plugin.provider}</Plugin-Provider>
+              <Plugin-Dependencies>${plugin.dependencies}</Plugin-Dependencies>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
